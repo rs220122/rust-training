@@ -4,3 +4,24 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+serde = { version = "1.0", features = ["derive"]}
+actix-web = "4"
+num="0.4"
+image="0.25.6"
+crossbeam="0.8"
+text-colorizer="1"
+regex="1"
+
+[[bin]]
+name="mandel_pure"
+path="src/mandel_pure/main.rs"
+
+[[bin]]
+name="mandel_thread"
+path="src/mandel_multi_thread/main.rs"
+
+[[bin]]
+name='quickreplace'
+path='src/quickreplace/main.rs'
+
+

@@ -1,0 +1,5 @@
+# rust-toolchain.toml
+[toolchain]
+channel = "1.86.0"  # 任意のバージョン
+components = ["rustfmt", "clippy"]  # オプション（自動で一緒に入る）
+targets = ["aarch64-apple-darwin"]  # ターゲット指定（Apple Silicon向け）
